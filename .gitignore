@@ -1,0 +1,28 @@
+# Pastas geradas automaticamente (compilação e dependências)
+bin/
+obj/
+
+# Configurações do Visual Studio e Rider
+.vs/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Configurações do VS Code
+.vscode/
+
+# Arquivos temporários e logs
+*.log
+logs/
+temp/
+
+# Configurações de ambiente (evite versionar credenciais)
+appsettings.Development.json
+appsettings.Local.json
+secrets.json
+
+# Arquivos específicos do Mac/Linux
+.DS_Store
+*.swp
