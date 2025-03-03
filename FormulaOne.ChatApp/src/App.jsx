@@ -24,13 +24,21 @@ function App() {
       });
 
       conn.on("ReceiveSpecificMessage", (username, msg) => {
-        setMessages(messages => [...messages, {username, msg}])
+        setMessages((messages) => [...messages, { username, msg }]);
       });
 
       await conn.start();
       await conn.invoke("JoinSpecificChatRoom", { username, chatroom });
 
       setConnection(conn);
+    } catch (e) {
+      console.error(e);
+    }
+  };
+
+  const sendMessage = async (message) => {
+    try {
+      await conn.invoke("SendMessage", message)
     } catch (e) {
       console.error(e);
     }
@@ -48,12 +56,11 @@ function App() {
             </Col>
           </Row>
 
-          {!conn
-            ? <WaitingRoom joinChatRoom={joinChatRoom} />
-            : <ChatRoom messages={messages}></ChatRoom>
-          }
-
-
+          {!conn ? (
+            <WaitingRoom joinChatRoom={joinChatRoom} />
+          ) : (
+            <ChatRoom messages={messages} sendMessage={sendMessage}></ChatRoom>
+          )}
         </Container>
       </main>
     </div>

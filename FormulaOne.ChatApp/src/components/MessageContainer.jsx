@@ -6,8 +6,9 @@ const MessageContainer = ({ messages }) => {
           {messages.map((msg, index) => {
             return (
               <tr key={index}>
-                <td>
-                  {msg.msg} - {msg.username}
+                <td style={{display: "flex", gap: 14}}>
+                  {msg.msg}
+                  <span style={{ color: "#8a8a8a" }}>- {msg.username}</span>
                 </td>
               </tr>
             );
