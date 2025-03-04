@@ -83,12 +83,15 @@ npm run dev
 http://localhost:5173
 ```
 
-
 # References
 The development of this project was guided by the video [`.NET 8 .🚀🔥: Building a Real-Time Chat App with .NET SignalR and React A Step by Step Tutorial`](https://www.youtube.com/watch?v=pvi_ZS_PrSc), produced by [`Mohamad Lawand`](https://github.com/mohamadlawand087)
 
 # Project Screenshots
+### Homepage
+![Homepage](./readme-imgs/Homepage.png)
 
+### Villa Details
+![Chatroom](./readme-imgs/Chatroom.png)
 
 # License
 ```
