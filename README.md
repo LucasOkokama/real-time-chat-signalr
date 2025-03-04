@@ -69,7 +69,7 @@ dotnet restore
 ```
 dotnet run
 ```
-4. Create another `CDM window` (root folder), open the `FormulaOne.ChatApp` folder and Install the `dependencies`
+4. Create another `CDM window` (root folder), open the `FormulaOne.ChatApp` folder and Install the `dependencies`:
 ```
 cd FormulaOne.ChatApp
 npm install
@@ -90,7 +90,7 @@ The development of this project was guided by the video [`.NET 8 .🚀🔥: Buil
 ### Homepage
 ![Homepage](./readme-imgs/Homepage.png)
 
-### Villa Details
+### Chatroom
 ![Chatroom](./readme-imgs/Chatroom.png)
 
 # License
