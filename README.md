@@ -69,14 +69,14 @@ dotnet restore
 ```
 dotnet run
 ```
-4. Open the `FormulaOne.ChatApp` folder and Install the `dependencies`
+4. Create another `CDM window` (root folder), open the `FormulaOne.ChatApp` folder and Install the `dependencies`
 ```
-cd ../FormulaOne.ChatApp
+cd FormulaOne.ChatApp
 npm install
 ```
 5. `Run` the frontend:
 ```
-npm start
+npm run dev
 ```
 6. Access `localhost` to open the website:
 ```
